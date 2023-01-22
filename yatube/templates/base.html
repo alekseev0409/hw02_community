@@ -1,0 +1,22 @@
+<!-- templates/base.html -->
+<!DOCTYPE html> 
+<html lang="ru">          
+  <head>       
+  </head>
+  <body>       
+    <header>
+      {% load static %}
+      <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"
+      {% include 'includes/header.html' %}
+    </header>
+    <main>
+      <h1> {{text }} </h1>
+      {% block content %}
+        Контент не подвезли :(
+      {% endblock %}
+    </main>
+    <footer class="border-top text-center py-3">
+      {% include 'includes/footer.html' %} 
+    </footer>
+  </body>
+</html>
