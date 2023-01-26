@@ -1,6 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Post, Group
-from .models import LAST_POSTS
+from .models import Post, Group, LAST_POSTS
 
 
 def index(request):
